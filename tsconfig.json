@@ -1,0 +1,45 @@
+{
+  "graphQLErrors": [
+    {
+      "message": "Forbidden",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "machines"
+      ],
+      "extensions": {
+        "code": "INTERNAL_SERVER_ERROR",
+        "exception": {
+          "data": null,
+          "isBoom": true,
+          "isServer": false,
+          "output": {
+            "statusCode": 403,
+            "payload": {
+              "statusCode": 403,
+              "error": "Forbidden",
+              "message": "Forbidden"
+            },
+            "headers": {}
+          },
+          "message": "Forbidden",
+          "stacktrace": [
+            "Error: Forbidden",
+            " at handleErrors (C:\\Projekty\\Fanuc-Digital-Marketing\\Fanuc-CMS\\node_modules\\strapi-plugin-users-permissions\\config\\policies\\permissions.js:101:28)",
+            " at module.exports (C:\\Projekty\\Fanuc-Digital-Marketing\\Fanuc-CMS\\node_modules\\strapi-plugin-users-permissions\\config\\policies\\permissions.js:88:12)",
+            " at runMicrotasks (<anonymous>)",
+            " at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+            " at async C:\\Projekty\\Fanuc-Digital-Marketing\\Fanuc-CMS\\node_modules\\strapi-utils\\lib\\policy.js:52:5",
+            " at async C:\\Projekty\\Fanuc-Digital-Marketing\\Fanuc-CMS\\node_modules\\strapi-plugin-graphql\\services\\resolvers-builder.js:103:5"
+          ]
+        }
+      }
+    }
+  ],
+  "networkError": null,
+  "message": "GraphQL error: Forbidden"
+}

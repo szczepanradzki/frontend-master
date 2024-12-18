@@ -1,0 +1,137 @@
+.offer-addons {
+  &.block {
+
+    .comment-input {
+      margin-right: 10px;
+      width: calc(70% - 10px);
+    }
+
+    .input {
+      textarea {
+        padding: 10px;
+        height: 300px;
+      }
+    }
+
+    .block {
+      margin-top: 50px;
+    }
+  }
+
+  .additional-price {
+    align-self: flex-end;
+    margin: 20px 0 0 10px !important;
+    padding: 20px 0;
+    width: calc(30% - 10px);
+
+    input {
+      padding-right: 50px;
+      font-size: $regular;
+      text-align: right;
+
+    }
+
+    .input-info {
+      top: 50%;
+      left: auto;
+      right: 10px;
+      margin-top: 0;
+      width: 35px;
+      font-size: $regular;
+      transform: translateY(-50%);
+    }
+
+    &.input-invalid {
+      .input-info {
+        display: block;
+      }
+    }
+
+  }
+
+  .services {
+    .media-item {
+      .item-inner {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > .item-title-row {
+          width: 100%;
+
+          .item-title {
+            white-space: pre-wrap;
+          }
+
+          .item-after {
+            font-size: $regular;
+          }
+        }
+
+        li {
+          width: auto;
+
+          .item-inner {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 0;
+
+            .item-label {
+              left: 0;
+              width: auto;
+            }
+
+            .item-input-wrap {
+              width: 65px;
+
+              input[type="number"] {
+                text-align: center;
+              }
+
+              .item-input-error-message {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .discount {
+    position: relative;
+    width: 30%;
+
+    input {
+      padding: 20px 30px;
+      text-align: right;
+      font-size: $regular;
+    }
+
+    .input-info {
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: 15px;
+      margin-top: 0;
+      width: auto;
+      font-size: $regular;
+      transform: translateY(-50%);
+    }
+
+    &.input-invalid {
+      padding-bottom: 0;
+
+      .input-info {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .additional-price {
+      .input-info {
+        position: absolute;
+      }
+    }
+  }
+}

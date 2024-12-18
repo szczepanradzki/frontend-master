@@ -1,0 +1,109 @@
+.popup {
+  .navbar {
+    .popup-close {
+      color: $black;
+    }
+  }
+
+  &__send-offer {
+
+    .block {
+      position: static;
+
+      .list {
+        position: static;
+        margin-top: 0;
+
+        ul {
+          @include flex(stretch, space-between);
+
+          li {
+            flex: 0 0 50%;
+          }
+        }
+
+        &__client {
+          max-height: 320px;
+          overflow-y: auto;
+        }
+      }
+    }
+
+    .offer-actions {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .client-checkbox {
+    margin-right: 10px;
+  }
+
+  &.offer-name {
+    .navbar {
+      .link {
+        color: $black;
+      }
+    }
+
+    .page-content {
+      .input {
+        input {
+          padding: 15px 10px;
+          font-size: $regular
+        }
+      }
+    }
+  }
+
+  &__personalize {
+    .page-content {
+      padding-bottom: 0;
+    }
+
+    &--chars-left {
+      margin-bottom: 0;
+      float: right;
+      font-size: $small;
+    }
+
+    &--textarea {
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      clear: both;
+
+      &:first-child {
+        height: 20px;
+      }
+
+      &:nth-of-type(2) {
+        height: 300px;
+      }
+
+      textarea {
+        padding: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  &__saving {
+    height: 300px !important;
+    width: 600px !important;
+    border-radius: 40px !important;
+
+    &--text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: $big;
+      font-weight: 700;
+      transform: translate(-50%, -50%);
+    }
+
+    .block {
+      position: static;
+    }
+  }
+}

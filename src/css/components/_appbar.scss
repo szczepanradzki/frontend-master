@@ -1,0 +1,65 @@
+.appbar {
+  margin-top: 20px;
+  background-color: $white;
+
+  &-inner {
+    @include flex(center, flex-end);
+
+    .button {
+      &.back {
+        margin-right: auto;
+        color: $black;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  &__account-managment {
+    @include flex(center, flex-end);
+    margin: 0;
+
+    &--link, &--button {
+      color: $black !important;
+    }
+
+    &--link {
+      margin: 0 40px 0 0;
+    }
+
+  }
+
+  &__filter {
+    .appbar-inner {
+      @include flex(center, space-between);
+      width: calc(100% - 100px);
+
+      .input {
+        flex: 1 0;
+        margin: 0 5px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        input {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__filter {
+      .appbar-inner {
+        width: 100%;
+      }
+    }
+  }
+}

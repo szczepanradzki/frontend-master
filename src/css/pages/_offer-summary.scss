@@ -1,0 +1,19 @@
+.offer-actions {
+  @include flex(center, space-around);
+
+  &.center {
+    justify-content: center;
+
+    .button {
+      margin: 10px 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  }
+}

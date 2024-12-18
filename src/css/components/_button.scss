@@ -1,0 +1,33 @@
+.btn {
+  &__action {
+    display: block;
+    padding: 10px 40px;
+    width: auto;
+    height: auto;
+    font-size: $regular;
+    color: $white;
+
+    &--link {
+      margin: 15px auto;
+      padding: 0 25px;
+      width: auto;
+    }
+
+    &--confirm {
+      background-color: green;
+      border-color: green;
+    }
+
+    &--cancel {
+      background-color: red;
+      border-color: red;
+    }
+  }
+}
+
+.button {
+  &.reset {
+    margin: 15px auto 0;
+    width: 160px;
+  }
+}

@@ -1,0 +1,126 @@
+.select {
+  padding: 10px 5px;
+  margin-bottom: 20px;
+
+  select {
+    font-size: $regular;
+  }
+
+  &__multiple {
+    p {
+      margin-bottom: 10px;
+      font-size: $regular;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 16px;
+      margin-top: 0;
+      max-height: 120px;
+      border-radius: 4px;
+      border: 1px solid #999;
+      overflow-y: auto;
+
+      li {
+        margin: 10px 0;
+
+        .item-checkbox {
+          display: flex;
+          align-items: center;
+
+          .icon-checkbox {
+            margin-right: 10px;
+          }
+
+          .item-inner {
+            display: inline-block;
+
+            .item-title {
+              display: inline-block;
+              font-size: $regular;
+            }
+          }
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.list {
+  &.media-list {
+    .item-checkbox {
+      padding-left: 0;
+
+      .item-inner {
+        .item-subtitle {
+          font-size: $regular;
+          order: 3;
+        }
+      }
+    }
+  }
+
+  &__selectBox {
+    margin-top: 0;
+
+    .accordion-item-opened {
+      .accordion-item-content {
+        padding: 15px 0;
+        border: 1px solid #c7c7c7;
+      }
+    }
+
+    .item-checkbox {
+
+      .item-title {
+        flex: 0 0 100%;
+      }
+    }
+
+    .item-title-row {
+      justify-content: center;
+    }
+
+    .item-title {
+      flex: 0 0 15%;
+      font-size: $regular;
+    }
+
+    .item-after {
+      margin-left: 100px;
+      color: $black;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .item-title-row {
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 60%;
+
+      .item-title {
+        flex: 0 0 115px;
+        text-align: center;
+      }
+    }
+    .item-checkbox {
+      .item-title-row {
+        .item-title {
+          flex: 0 0 80%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

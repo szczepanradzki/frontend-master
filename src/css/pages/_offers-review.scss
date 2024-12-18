@@ -1,0 +1,62 @@
+.review {
+  &__list {
+    .item-inner {
+      @include flex(center, space-between);
+
+      .item {
+        display: block;
+        flex: 1 0;
+        margin: 0 5px;
+        text-align: center;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.action {
+          @include flex(center, space-around, row, nowrap);
+          flex: 0 0 90px;
+
+          span {
+            line-height: 0;
+
+            .button {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__list {
+      .item-inner {
+        .item {
+          &:first-child {
+            flex: 0 0 100%;
+            margin-bottom: 15px;
+          }
+
+          &.action {
+            justify-content: center;
+            flex: 0 0 100%;
+            margin-top: 15px;
+
+            span {
+              margin: 0 10px;
+            }
+          }
+        }
+
+        &:after {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}

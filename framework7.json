@@ -1,0 +1,42 @@
+{
+  "cwd": "C:\\Projekty\\Fanuc-Digital-Marketing\\frontend",
+  "type": [
+    "cordova",
+    "web",
+    "pwa"
+  ],
+  "name": "Fanuc-Digital-Marketing",
+  "framework": "react",
+  "template": "split-view",
+  "bundler": "webpack",
+  "cssPreProcessor": "scss",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": true
+  },
+  "customBuild": false,
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": true,
+    "preserveAssetsPaths": true,
+    "inlineAssets": true
+  },
+  "pkg": "io.framework7.offer",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen",
+      "cordova-plugin-wkwebview-engine"
+    ]
+  }
+}

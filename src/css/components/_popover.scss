@@ -1,0 +1,16 @@
+.popover-menu {
+  left: 50% !important;
+  width: 310px;
+  max-width: 100%;
+  transform: translateX(-50%) !important;
+
+  .item-title {
+    font-size: $small;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .item-after {
+    color: $black;
+    font-size: $regular;
+  }
+}
